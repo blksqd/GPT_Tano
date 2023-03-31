@@ -1,0 +1,132 @@
+body {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e9e3d8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1C1C1C;
+}
+
+h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 200;
+    color: #1C1C1C;
+    margin-bottom: 10px; /* reduce the margin-bottom to create more space */
+}
+
+h2 {
+    font-size: 18px; /* reduce the font size */
+    font-weight: 200;
+    line-height: 1.5; /* increase the line height for better readability */
+    text-align: center; /* center the text */
+    margin: 0 auto; /* center the element horizontally */
+    max-width: 60%; /* set a max width to prevent it from getting too wide */
+    margin-bottom: 30px; /* add some bottom margin for spacing */
+}
+
+
+#chatbox {
+    background-color: #f4f2ef;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 700px;
+    height: 600px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#messages {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.user-message, .bot-message {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background-color: #D8C3A5;
+    align-self: flex-end;
+    color: #1C1C1C;
+}
+
+.bot-message {
+    background-color: #cfcdba;
+    align-self: flex-start;
+    color: #1c1b1a;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    background-color: #ded3c3;
+    color: #1C1C1C;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #817c56;
+    color: #F4EEE4;
+}
+
+button[type="submit"]:hover {
+    background-color: #5D5B53;
+    cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 5px;
+  border-left: 1px solid #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1c1c1c;
+}
